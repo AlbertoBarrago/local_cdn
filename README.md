@@ -17,7 +17,7 @@ cdn_style_example/
 
 ## Prerequisites
 
-- Node.js@14.15.0 (download from [nodejs.org](https://nodejs.org/))
+- Node.js (download from [nodejs.org](https://nodejs.org/))
 - npm (Node Package Manager, comes with Node.js)
 
 ## Setup Instructions
@@ -32,12 +32,16 @@ cdn_style_example/
 2.  ``` bash
     npm install express node-sass-middleware
     ```
-3.  ``` node server.js```
+3.  ``` bash
+    node server.js
+    ```
 
 The server will start and listen on port 3000. You can access the local CDN at http://localhost:3000.
 
-### EXAMPLE
-```<!DOCTYPE html>
+
+## Example
+
+``` <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -49,4 +53,6 @@ The server will start and listen on port 3000. You can access the local CDN at h
     <h1 class="yellow">Hello, World!</h1>
     <p>This text should be in the custom font.</p>
 </body>
-</html>```
+</html>
+
+```
