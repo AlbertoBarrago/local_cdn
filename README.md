@@ -14,7 +14,6 @@ cdn_style_example/
 └── server.js
 ```
 
-
 ## Prerequisites
 
 - Node.js (download from [nodejs.org](https://nodejs.org/))
@@ -25,7 +24,7 @@ cdn_style_example/
 1. **Clone the Repository:**
 
     ```sh
-    git clone https://github.com/yourusername/cdn_style_example.git
+    git clone https://github.com/albertobarrago/cdn_style_example.git
     cd cdn_style_example
     ```
 
@@ -43,15 +42,15 @@ The server will start and listen on port 3000. You can access the local CDN at h
 
 ``` <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost:3000/css/style.css">
-    <title>Local CDN Example</title>
-</head>
-<body>
-    <h1 class="yellow">Hello, World!</h1>
-    <p>This text should be in the custom font.</p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://localhost:3000/css/style.css">
+        <title>Local CDN Example</title>
+    </head>
+    <body>
+        <h1 class="yellow">Hello, World!</h1>
+        <p>This text should be in the custom font.</p>
+    </body>
 </html>
 ```
