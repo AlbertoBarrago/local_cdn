@@ -5,15 +5,15 @@ const sassMiddleware = require('node-sass-middleware');
 const app = express();
 const port = 3000;
 
-// Correct the paths
+// Create path for fething sources
 const scssPath = path.join(__dirname, 'scss');
 const cssPath = path.join(__dirname, 'css');
 const fontsPath = path.join(__dirname, 'fonts');
 
 // Debug log for paths
-console.log('SCSS source directory:', scssPath);
-console.log('CSS destination directory:', cssPath);
-console.log('Fonts directory:', fontsPath);
+// console.log('SCSS source directory:', scssPath);
+// console.log('CSS destination directory:', cssPath);
+// console.log('Fonts directory:', fontsPath);
 
 // Configure node-sass-middleware
 app.use(
@@ -34,5 +34,8 @@ app.use('/fonts', express.static(fontsPath));
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Local CDN server is running at http://localhost:${port}`);
+    console.log(`
+    🚀 Local CDN server is running at http://localhost:${port}
+With this entry point: http://localhost:${port}/css/style.css
+Serving: SCSS and FONTS`);
 });
