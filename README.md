@@ -54,5 +54,4 @@ The server will start and listen on port 3000. You can access the local CDN at h
     <p>This text should be in the custom font.</p>
 </body>
 </html>
-
 ```
